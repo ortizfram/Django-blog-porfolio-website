@@ -1,0 +1,63 @@
+{% load static %}
+
+<nav class="fixed-top navbar navbar-expand-lg bg-black bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold fst-italic" href="/">
+            FO
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="{% url 'blog:posts' %}">Blog</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="btn btn-primary btn-sm" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Download
+                        CV</a>
+                </li>
+            </ul>
+        </div>
+        <!-- socials -->
+        <div class="social-icons">
+            <a href="mailto:ortizfranco48@yahoo.com" target="_blank" class="social-icon"
+                title="ortizfranco48@yahoo.com">
+                <i class="bi bi-envelope-fill" style="color: white;"></i>
+            </a>
+            <a href="https://github.com/ortizfram/" target="_blank" class="social-icon" title="ortizfram">
+                <i class="bi bi-github" style="color: white;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ortizfram/" target="_blank" class="social-icon" title="ortizfram">
+                <i class="bi bi-linkedin" style="color: white;"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<style>
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        margin-left: 2%;
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #c8d6e5;
+        transition: border-color 0.2s, border-width 0.2s;
+    }
+
+    .social-icon:hover {
+        border-color: #3474ff;
+        /* Change border color on hover */
+        border-width: 2.5px;
+        /* Increase border width on hover */
+    }
+</style>
