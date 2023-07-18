@@ -35,13 +35,13 @@ ALLOWED_HOSTS = ["*", "https://django-blog-porfolio-website-production.up.railwa
 # Application definition
 
 INSTALLED_APPS = [
+    'markdownx',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'markdownx',
     "blog",
     "portfolio",
 ]
