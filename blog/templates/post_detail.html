@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 {% block content %}
-{% load markdownx_tags %}
+{% load markdownx %}
 
 <div class="text-center">
     <h2>{{post.title}}</h2>
@@ -9,7 +9,7 @@
     <img src="{{post.image.url}}" class="img-fluid" alt="{{post.title}}">
 
     <div class="my-4">
-        <p>{{post.description|markdownx|safe}}</p>
+        <p>{{post.description|markdown|safe}}</p>
     </div>
 
 </div>
