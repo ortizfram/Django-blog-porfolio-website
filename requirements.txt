@@ -1,10 +1,15 @@
 asgiref==3.7.2
+distlib==0.3.6
+dj-database-url==2.0.0
 Django==4.2.3
-gunicorn==21.1.0
-packaging==23.1
+filelock==3.12.2
 Pillow==10.0.0
+platformdirs==3.8.1
 psycopg2==2.9.6
+psycopg2-binary==2.9.6
 python-dotenv==1.0.0
 sqlparse==0.4.4
+typing_extensions==4.7.1
 tzdata==2023.3
+virtualenv==20.23.1
 whitenoise==6.5.0

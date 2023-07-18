@@ -1,6 +1,6 @@
 {% load static %}
 
-<nav class="fixed-top navbar navbar-expand-lg bg-black bg-dark navbar-dark">
+<nav class="fixed-top navbar navbar-expand-lg bg-black bg-dark navbar-dark py-4">
     <div class="container">
         <a class="navbar-brand fw-bold fst-italic" href="/">
             FO
@@ -11,8 +11,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="{% url 'blog:posts' %}">Blog</a>
+                <li class="nav-item my-4 mx-lg-4">
+                    <a class="btn btn-outline-primary btn-sm fw-bold" href="{% url 'blog:posts' %}">Blog</a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
                     <a class="btn btn-primary btn-sm" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Download
@@ -21,7 +21,7 @@
             </ul>
         </div>
         <!-- socials -->
-        <div class="social-icons">
+        <div class="social-icons mt-4">
             <a href="mailto:ortizfranco48@yahoo.com" target="_blank" class="social-icon"
                 title="ortizfranco48@yahoo.com">
                 <i class="bi bi-envelope-fill" style="color: white;"></i>
