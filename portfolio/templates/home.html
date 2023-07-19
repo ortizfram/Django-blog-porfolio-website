@@ -54,8 +54,8 @@
         <div class="card bg-black card-project">
             <div class="card-body text-light">
                 <img src="{{project.image.url}}" class="card-img-top project-image mb-2" alt="{{project.title}}">
-                <h2>{{project.title|convert_markdown|safe}}</h2>
-                <p>{{project.description|convert_markdown|safe}}</p>
+                <h2>{{project.title|convert_markdown_with_highlight|safe}}</h2>
+                <p>{{project.description|convert_markdown_with_highlight|safe}}</p>
 
                 {% if project.url %}
                 <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="_blank">
