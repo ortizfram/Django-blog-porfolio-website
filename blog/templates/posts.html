@@ -12,8 +12,8 @@
                 <img src="{{post.image.url}}" class="post-image img-fluid" alt="{{post.title}}">
             </div>
             <div class="col-lg-9 col-md-7 col-12">
-                <h2>{{post.title|convert_markdown|safe}}</h2>
-                <p>{{post.description|striptags|truncatechars:100|convert_markdown|safe}}</p>
+                <h2>{{post.title|convert_markdown_with_highlight|safe}}</h2>
+                <p>{{post.description|striptags|truncatechars:100|convert_markdown_with_highlight|safe}}</p>
                 <a href="{% url 'blog:post_detail' post.id %}" class="btn btn-primary">See more...</a>
             </div>
         </div>
