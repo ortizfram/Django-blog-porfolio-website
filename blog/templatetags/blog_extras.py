@@ -10,7 +10,7 @@ register = template.Library()
 
 @register.filter
 @stringfilter
-def convert_markdown_with_highlight(value):
+def convert_markdown(value):
     return markdown.markdown(
         value,
         extensions=[

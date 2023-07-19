@@ -6,14 +6,14 @@
 
 <div>
     <div class="text-center">
-        <h2>{{post.title}}</h2>
+        <h2>{{post.title|convert_markdown|safe}}</h2>
         <h3 class="my-3 h5 fst-italic">{{post.date|date:'M d Y'|upper}}</h3>
 
         <img src="{{post.image.url}}" class="img-fluid" alt="{{post.title}}">
 
     </div>
     <div class="my-4">
-        <p>{{post.description|convert_markdown_with_highlight|safe}}</p>
+        <p>{{post.description|convert_markdown|safe}}</p>
     </div>
 
 </div>
