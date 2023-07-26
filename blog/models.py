@@ -8,3 +8,6 @@ class Post(models.Model):
     description =  MarkdownxField()
     image = models.ImageField(upload_to="blog/images")
     date = models.DateField(default=datetime.date.today)
+   
+    def __str__(self):
+            return self.title
