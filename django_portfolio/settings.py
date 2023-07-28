@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*", "https://django-blog-porfolio-website-production.up.railway.app/"]
+ALLOWED_HOSTS = ["*", "https://django-blog-porfolio-website-production.up.railway.app/","ortizdev.com","www.ortizdev.com","django-blog-porfolio-website-production.up.railway.app"]
 
 
 # Application definition
